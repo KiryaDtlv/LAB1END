@@ -1,6 +1,6 @@
-#include "intersection.h"
 #include "Form.h"
 #include "Math.h"
+#include "intersection.h"
 #include <stdio.h>
 #define p 3.14
 int main()
