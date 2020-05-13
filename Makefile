@@ -9,16 +9,16 @@ $(DIR_BIN)/main: $(DIR_BUILD)/Main.o $(DIR_BUILD)/Form.o $(DIR_BUILD)/Math.o $(D
 	gcc  $(DIR_BUILD)/Main.o $(DIR_BUILD)/intersection.o $(DIR_BUILD)/Form.o $(DIR_BUILD)/Math.o -o $(DIR_BIN)/main -lm
 
 $(DIR_BUILD)/Main.o: src/Main.c
-	gcc  -c src/Main.c -o $(DIR_S)/Main.o
+	gcc  -c src/Main.c -o $(DIR_BUILD)/Main.o
 
 $(DIR_BUILD)/Math.o: src/Math.c
-	gcc  -c src/Math.c -o $(DIR_S)/Math.o
+	gcc  -c src/Math.c -o $(DIR_BUILD)/Math.o
 
 $(DIR_BUILD)/Form.o: src/Form.c
-	gcc  -c src/Form.c -o $(DIR_S)/Form.o
+	gcc  -c src/Form.c -o $(DIR_BUILD)/Form.o
 
 $(DIR_BUILD)/intersection.o: src/intersection.c
-	gcc -c src/intersection.c -o $(DIR_S)/intersection.o -lm
+	gcc -c src/intersection.c -o $(DIR_BUILD)/intersection.o -lm
 
 clean:
 	rm -rf $(DIR_BUILD)/*.o
