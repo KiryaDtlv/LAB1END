@@ -1,9 +1,8 @@
-#include "Form.h"
 #include "intersection.h"
+#include "Form.h"
 #include "Math.h"
 #include <stdio.h>
 #define p 3.14
-
 int main()
 {
     int r1, r2;
