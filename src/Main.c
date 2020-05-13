@@ -73,7 +73,7 @@ int main()
     printf("%s(%d, %d, %d)\n", name, x2, y2, r2);
     printf("Площадь: %0.2f\n", S2);
     printf("Периметр: %0.2f\n", P2);
-    int peres = intersection(x1, y1, x2, y2, r1, r2);
+    int peres = Intersection(x1, y1, x2, y2, r1, r2);
     if (peres == 0) {
         printf("\nОкружности пересекаются\n");
     } else
