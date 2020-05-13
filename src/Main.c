@@ -1,43 +1,9 @@
-#include <string.h>
-#include <math.h>
-#include <stdlib.h>
+#include <Form.h>
+#include <intersection.h>
+#include <Math.h>
 #include <stdio.h>
 #define p 3.14
 
-int Intersection(int x1, int y1, int x2, int y2, int r1, int r2)
-{
-    float d = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
-    if (d == 0 && r1 == r2) {
-        return 1;
-    } else if (d > r1 + r2) {
-        return 1;
-    } else if (d < abs(r1 - r2)) {
-        return 1;
-    } else
-        return 0;
-}
-int Perimetr(int r)
-{
-    if (r <= 0) {
-        return 1;
-    } else
-        return 0;
-}
-
-int Ploshad(int r)
-{
-    if (r <= 0) {
-        return 1;
-    } else
-        return 0;
-}
-int Figure(char name[])
-{
-    if (strncmp(name, "circle", 6) == 0) {
-        return 0;
-    } else
-        return 1;
-}
 int main()
 {
     int r1, r2;
