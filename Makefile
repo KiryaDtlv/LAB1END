@@ -1,9 +1,9 @@
 DIR_BUILD = ./build
 DIR_TEST = ./build/test
-DIR_BIN = ./bin
+DIR_BIN = bin/program
 CPP = -Wall -Werror
 DIR_S = ./src
-TEST = ./bin/test
+TEST = bin/test
 
 all:clean $(DIR_BIN)/main
 
