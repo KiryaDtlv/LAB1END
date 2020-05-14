@@ -22,7 +22,7 @@ $(DIR_BUILD)/Form.o: src/Form.c
 $(DIR_BUILD)/intersection.o: src/intersection.c
 	gcc $(CPP) -c src/intersection.c -o $(DIR_BUILD)/intersection.o -lm
 
-$(DIR_TEST)/main.o: test/Main.c
+$(DIR_TEST)/Main.o: test/Main.c
 	gcc $(CPP) -I thirdparty -c test/Main.c -o $(DIR_TEST)/Main.o
 
 $(DIR_TEST)/test_inter.o: test/test_inter.c
