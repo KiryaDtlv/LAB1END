@@ -3,7 +3,7 @@
 #include "intersection.h"
 #include "ctest.h"
 
-CTEST(good_name, Form)
+CTEST(good_name, circl_true)
 {
     char name1[] = "circle";
     int k1 = Form(name1);
@@ -13,7 +13,7 @@ CTEST(good_name, Form)
     ASSERT_EQUAL(0, k2);
 }
 
-CTEST(bad_name, Form)
+CTEST(bad_name, circle_false)
 {
     char name1[] = "";
     int k1 = Form(name1);
