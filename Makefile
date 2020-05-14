@@ -29,7 +29,7 @@ $(DIR_TEST)/test_inter.o: test/test_inter.c
 	gcc $(CPP) -I thirdparty -I src -c test/test_inter.c -o $(DIR_TEST)/test_inter.o
 
 $(TEST): $(DIR_TEST)/test_inter.o $(DIR_TEST)/Main.o
-	gcc $(CPP) $(DIR_S)/Form.o $(DIR_S)/Math.h $(DIR_S)/intersection.h $(DIR_TEST)/test_inter.o $(DIR_TEST)/Main.o -o $(TEST) -lm
+	gcc $(CPP) $(DIR_S)/Form.h $(DIR_S)/Math.h $(DIR_S)/intersection.h $(DIR_TEST)/test_inter.o $(DIR_TEST)/Main.o -o $(TEST) -lm
 
 clean:
 	rm -rf $(DIR_BUILD)/*.o
