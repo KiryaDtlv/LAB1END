@@ -1,7 +1,7 @@
 #include "Form.h"
-#include "intersection.h"
 #include "Math.h"
 #include "ctest.h"
+#include "intersection.h"
 
 CTEST(good_name, true_circle)
 {
