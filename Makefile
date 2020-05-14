@@ -3,9 +3,9 @@ DIR_TEST = ./build/test
 DIR_BIN = ./bin
 CPP = -Wall -Werror
 DIR_S = ./src
-TEST = bin/test
+TEST = ./bin/test
 
-all:clean $(DIR_BIN)/main
+all:clean $(DIR_BIN)/main $(TEST)
 
 $(DIR_BIN)/main: $(DIR_BUILD)/Main.o $(DIR_BUILD)/Form.o $(DIR_BUILD)/Math.o $(DIR_BUILD)/intersection.o
 	gcc $(CPP)  $(DIR_BUILD)/Main.o $(DIR_BUILD)/intersection.o $(DIR_BUILD)/Form.o $(DIR_BUILD)/Math.o -o $(DIR_BIN)/main -lm
