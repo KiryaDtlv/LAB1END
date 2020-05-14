@@ -3,7 +3,6 @@ DIR_TEST = ./build/test
 DIR_BIN = ./bin
 CPP = -Wall -Werror
 DIR_S= ./src
-TEST = ./bin/test
 
 all:clean $(DIR_BIN)/main
 
@@ -28,8 +27,8 @@ $(DIR_TEST)/main.o: test/Main.c
 $(DIR_TEST)/test_inter.o: test/test_inter.c
 	gcc $(CPP) -I thirdparty -I src -c test/test_inter.c -o $(DIR_TEST)/test_inter.o
 
-$(TEST): $(DIR_TEST)/test_inter.o $(DIR_TEST)/Main.o
-	gcc $(CPP) $(DIR_S)/Form.o $(DIR_S)/Math.o $(DIR_S)/intersection.o $(DIR_TEST)/test_inter.o $(DIR_TEST)/Main.o -o $(TEST) -lm
+$(DIR_BIN): $(DIR_TEST)/test_inter.o $(DIR_TEST)/Main.o
+	gcc $(CPP) $(DIR_S)/Form.o $(DIR_S)/Math.o $(DIR_S)/intersection.o $(DIR_TEST)/test_inter.o $(DIR_TEST)/Main.o -o $(DIR_BIN) -lm
 
 clean:
 	rm -rf $(DIR_BUILD)/*.o
