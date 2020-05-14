@@ -1,7 +1,7 @@
 CPPFLAGS = -Wall -Werror
 DIR_S = build/src
 DIR_T = build/test
-PROG = bin/prog
+PROG = bin/program
 TEST = bin/test
 
 all: $(PROG) $(TEST)
@@ -9,7 +9,7 @@ all: $(PROG) $(TEST)
 $(PROG): $(DIR_S)/Main.o $(DIR_S)/Form.o $(DIR_S)/Math.o $(DIR_S)/intersection.o
 	gcc $(CPPFLAGS) $(DIR_S)/Main.o $(DIR_S)/intersection.o $(DIR_S)/Form.o $(DIR_S)/Math.o -o $(PROG) -lm
 
-$(DIR_S)/Main.o: src/main.c
+$(DIR_S)/Main.o: src/Main.c
 	gcc $(CPPFLAGS) -c src/Main.c -o $(DIR_S)/Main.o
 
 $(DIR_S)/Form.o: src/Form.c
