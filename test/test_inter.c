@@ -1,9 +1,9 @@
-#include "Form.h"
-#include "Math.h"
-#include "intersection.h"
+#include "Circle.h"
+#include "Figure.h"
+#include "Intersection.h"
 #include "ctest.h"
 
-CTEST(good_name, circl_true)
+CTEST(good_name, its_circle)
 {
     char name1[] = "circle";
     int k1 = Form(name1);
@@ -13,7 +13,7 @@ CTEST(good_name, circl_true)
     ASSERT_EQUAL(0, k2);
 }
 
-CTEST(bad_name, circle_false)
+CTEST(bad_name, not_circle)
 {
     char name1[] = "";
     int k1 = Form(name1);
