@@ -5,7 +5,7 @@ CPP = -Wall -Werror
 DIR_S= ./src
 TEST = ./bin/test
 
-all:clean $(DIR_BIN)/main run
+all:clean $(DIR_BIN)/main
 
 $(DIR_BIN)/main: $(DIR_BUILD)/Main.o $(DIR_BUILD)/Form.o $(DIR_BUILD)/Math.o $(DIR_BUILD)/intersection.o
 	gcc $(CPP)  $(DIR_BUILD)/Main.o $(DIR_BUILD)/intersection.o $(DIR_BUILD)/Form.o $(DIR_BUILD)/Math.o -o $(DIR_BIN)/main -lm
@@ -35,7 +35,5 @@ clean:
 	rm -rf $(DIR_BUILD)/*.o
 	rm -rf $(DIR_TEST)/*.o
 	rm -rf bin/*
-run: 
-	./$(DIR_BIN)/main
 	
 .PHONY: all clean
