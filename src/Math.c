@@ -2,7 +2,7 @@
 #define p 3.14
 int PS(int r)
 {
-	float S;
+    float S;
     if (r <= 0) {
     	printf("Неверный радиус!");
         return 1;
