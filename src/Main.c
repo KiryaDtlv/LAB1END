@@ -23,7 +23,7 @@ int main()
         }
         printf("Радиус: \n");
         scanf("%d", &r1);
-            PS(r1);
+        PS(r1);
         printf("Координаты второй окружности: \n");
         if (scanf("%d", &x2) != 1) {
             printf("Координаты должны быть целыми!");
@@ -35,7 +35,7 @@ int main()
         }
         printf("Радиус: \n");
         scanf("%d", &r2);
-            PS(r2);
+        PS(r2);
     } else {
         printf("Ошибка ввода фигуры! Доступные фигуры: circle");
         return 0;
