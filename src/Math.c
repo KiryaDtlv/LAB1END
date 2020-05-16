@@ -1,3 +1,4 @@
+#include <stdio.h>
 int PS(int r)
 {
     if (r <= 0) {
