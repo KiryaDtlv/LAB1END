@@ -6,12 +6,8 @@
 int main()
 {
     int r1, r2;
-    float P1, P2;
-    float S1, S2;
     int x1, x2;
     int y1, y2;
-    int res1_1, res1_2;
-    int res2_1, res2_2;
     char name[15];
     printf("Название фигуры: ");
     scanf("%s", name);
