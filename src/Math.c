@@ -7,9 +7,10 @@ int PS(int r)
     	printf("Неверный радиус!");
         return 1;
     } else
+    {
 	S = p * r * r;
     	printf("Площадь %0.2f", S);
     	float P = 2 * p * r;
     	printf("Периметр %0.2f", P);
-        return 0;
+    	return 0;
 }
