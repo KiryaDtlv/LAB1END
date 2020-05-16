@@ -5,8 +5,8 @@ int PS(int r)
         return 1;
     } else
     	float S = p * r * r;
-    	printf("%0.2f", S);
+    	printf("Площадь %0.2f", S);
     	float P = 2 * p * r;
-    	printf("%0.2f", P);
+    	printf("Периметр %0.2f", P);
         return 0;
 }
