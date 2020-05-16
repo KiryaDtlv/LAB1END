@@ -1,3 +1,14 @@
-*.md
+#Executables
 *.out
-*main
+*.exe
+*.app
+bin/prog
+bin/test
+*.swp
+
+#Obj files
+*.o
+*.obj
+*.lo
+*.slo
+
