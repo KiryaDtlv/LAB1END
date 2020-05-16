@@ -1,4 +1,5 @@
 #include <stdio.h>
+#define p 3.14
 int PS(int r)
 {
     if (r <= 0) {
