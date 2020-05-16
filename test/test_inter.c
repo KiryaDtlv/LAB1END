@@ -50,20 +50,14 @@ CTEST(that_intersection, intersection)
 
 CTEST(good_radius, Math)
 {
-    int res1_1 = Ploshad(3);
-    int res1_2 = Perimetr(3);
+    int res1_1 = PS(3);
     ASSERT_EQUAL(0, res1_1);
-    ASSERT_EQUAL(0, res1_2);
 }
 
 CTEST(bad_radius, Math)
 {
-    int res1_1 = Ploshad(0);
-    int res1_2 = Perimetr(0);
+    int res1_1 = PS(0);
     ASSERT_EQUAL(1, res1_1);
-    ASSERT_EQUAL(1, res1_2);
-    int res2_1 = Ploshad(-1);
-    int res2_2 = Perimetr(-1);
+    int res2_1 = PS(-1);
     ASSERT_EQUAL(1, res2_1);
-    ASSERT_EQUAL(1, res2_2);
 }
